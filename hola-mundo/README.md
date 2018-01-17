@@ -18,19 +18,15 @@ WARNING:
 
 ## Simple Tags
 
--	[`linux` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hola-mundo/Dockerfile)
--	[`nanoserver-sac2016` (*amd64/hola-mundo/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hola-mundo/nanoserver-sac2016/Dockerfile)
--	[`nanoserver-1709` (*amd64/hola-mundo/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hola-mundo/nanoserver-1709/Dockerfile)
+-	[`linux` (*i386/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/i386/hola-mundo/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
-	-	[`linux` (*amd64/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hola-mundo/Dockerfile)
-	-	[`nanoserver-sac2016` (*amd64/hola-mundo/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hola-mundo/nanoserver-sac2016/Dockerfile)
-	-	[`nanoserver-1709` (*amd64/hola-mundo/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hola-mundo/nanoserver-1709/Dockerfile)
+	-	[`linux` (*i386/hola-mundo/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/i386/hola-mundo/Dockerfile)
 -	`nanoserver`:
-	-	[`nanoserver-sac2016` (*amd64/hola-mundo/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hola-mundo/nanoserver-sac2016/Dockerfile)
-	-	[`nanoserver-1709` (*amd64/hola-mundo/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hola-mundo/nanoserver-1709/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/hola-mundo/badge/icon) (`i386/hola-mundo` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/hola-mundo/)
 
 # Quick reference
 
@@ -65,7 +61,7 @@ WARNING:
 This image is a vanity variant of [the `hello-world` image](https://hub.docker.com/_/hello-world/) created specifically for [DockerCon EU 2015](http://europe-2015.dockercon.com/). Its use is discouraged.
 
 ```console
-$ docker run hola-mundo
+$ docker run i386/hola-mundo
 
 ¡Hola de DockerCon EU 2015 (Barcelona)!
 This message shows that your installation appears to be working correctly.

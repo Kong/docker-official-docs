@@ -31,6 +31,8 @@ WARNING:
 -	[`9.0.2-jre8-alpine`, `9.0-jre8-alpine`, `9-jre8-alpine` (*9.0/jre8-alpine/Dockerfile*)](https://github.com/docker-library/tomcat/blob/b6a8794a995e0f482a3832b7c7041eec9a804f2a/9.0/jre8-alpine/Dockerfile)
 -	[`9.0.2-jre9`, `9.0-jre9`, `9-jre9`, `9.0.2`, `9.0`, `9` (*9.0/jre9/Dockerfile*)](https://github.com/docker-library/tomcat/blob/35e89070548111261cf6a9e9398556d5b2c4f7f7/9.0/jre9/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/tomcat/badge/icon) (`i386/tomcat` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/i386/job/tomcat/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -72,13 +74,13 @@ Apache Tomcat (or simply Tomcat) is an open source web server and servlet contai
 Run the default Tomcat server (`CMD ["catalina.sh", "run"]`):
 
 ```console
-$ docker run -it --rm tomcat:8.0
+$ docker run -it --rm i386/tomcat:8.0
 ```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 ```console
-$ docker run -it --rm -p 8888:8080 tomcat:8.0
+$ docker run -it --rm -p 8888:8080 i386/tomcat:8.0
 ```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
@@ -103,13 +105,13 @@ The configuration files are available in `/usr/local/tomcat/conf/`. By default, 
 
 # Image Variants
 
-The `tomcat` images come in many flavors, each designed for a specific use case.
+The `i386/tomcat` images come in many flavors, each designed for a specific use case.
 
-## `tomcat:<version>`
+## `i386/tomcat:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `tomcat:alpine`
+## `i386/tomcat:alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
