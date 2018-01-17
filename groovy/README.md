@@ -16,42 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.13-jdk7`, `2.4-jdk7`, `jdk7` (*jdk7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jdk7/Dockerfile)
--	[`2.4.13-jre7`, `2.4-jre7`, `jre7` (*jre7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jre7/Dockerfile)
--	[`2.4.13-jdk7-alpine`, `2.4-jdk7-alpine`, `jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jdk7-alpine/Dockerfile)
--	[`2.4.13-jre7-alpine`, `2.4-jre7-alpine`, `jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jre7-alpine/Dockerfile)
--	[`2.4.13-jdk8`, `2.4-jdk8`, `jdk8`, `2.4.13-jdk`, `2.4-jdk`, `jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jdk8/Dockerfile)
--	[`2.4.13-jre8`, `2.4-jre8`, `jre8`, `2.4.13-jre`, `2.4-jre`, `jre`, `2.4.13`, `2.4`, `latest` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jre8/Dockerfile)
--	[`2.4.13-jdk8-alpine`, `2.4-jdk8-alpine`, `jdk8-alpine`, `2.4.13-jdk-alpine`, `2.4-jdk-alpine`, `jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jdk8-alpine/Dockerfile)
--	[`2.4.13-jre8-alpine`, `2.4-jre8-alpine`, `jre8-alpine`, `2.4.13-jre-alpine`, `2.4-jre-alpine`, `jre-alpine`, `2.4.13-alpine`, `2.4-alpine`, `alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jre8-alpine/Dockerfile)
--	[`2.4.13-jdk9`, `2.4-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jdk9/Dockerfile)
--	[`2.4.13-jre9`, `2.4-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/45626e1a95ec165f97a0c7d9c356ed6a6857bd01/jre9/Dockerfile)
--	[`2.5.0-beta-1-jdk7`, `2.5-jdk7` (*jdk7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jdk7/Dockerfile)
--	[`2.5.0-beta-1-jre7`, `2.5-jre7` (*jre7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jre7/Dockerfile)
--	[`2.5.0-beta-1-jdk7-alpine`, `2.5-jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jdk7-alpine/Dockerfile)
--	[`2.5.0-beta-1-jre7-alpine`, `2.5-jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jre7-alpine/Dockerfile)
--	[`2.5.0-beta-1-jdk8`, `2.5-jdk8`, `2.5.0-beta-1-jdk`, `2.5-jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jdk8/Dockerfile)
--	[`2.5.0-beta-1-jre8`, `2.5-jre8`, `2.5.0-beta-1-jre`, `2.5-jre`, `2.5.0-beta-1`, `2.5` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jre8/Dockerfile)
--	[`2.5.0-beta-1-jdk8-alpine`, `2.5-jdk8-alpine`, `2.5.0-beta-1-jdk-alpine`, `2.5-jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jdk8-alpine/Dockerfile)
--	[`2.5.0-beta-1-jre8-alpine`, `2.5-jre8-alpine`, `2.5.0-beta-1-jre-alpine`, `2.5-jre-alpine`, `2.5.0-beta-1-alpine`, `2.5-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jre8-alpine/Dockerfile)
--	[`2.5.0-beta-1-jdk9`, `2.5-jdk9` (*jdk9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jdk9/Dockerfile)
--	[`2.5.0-beta-1-jre9`, `2.5-jre9` (*jre9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/317b39f5766091e2046966cd4a945a07f81f0911/jre9/Dockerfile)
--	[`2.6.0-alpha-2-jdk7`, `2.6-jdk7` (*jdk7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jdk7/Dockerfile)
--	[`2.6.0-alpha-2-jre7`, `2.6-jre7` (*jre7/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jre7/Dockerfile)
--	[`2.6.0-alpha-2-jdk7-alpine`, `2.6-jdk7-alpine` (*jdk7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jdk7-alpine/Dockerfile)
--	[`2.6.0-alpha-2-jre7-alpine`, `2.6-jre7-alpine` (*jre7-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jre7-alpine/Dockerfile)
--	[`2.6.0-alpha-2-jdk8`, `2.6-jdk8`, `2.6.0-alpha-2-jdk`, `2.6-jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jdk8/Dockerfile)
--	[`2.6.0-alpha-2-jre8`, `2.6-jre8`, `2.6.0-alpha-2-jre`, `2.6-jre`, `2.6.0-alpha-2`, `2.6` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jre8/Dockerfile)
--	[`2.6.0-alpha-2-jdk8-alpine`, `2.6-jdk8-alpine`, `2.6.0-alpha-2-jdk-alpine`, `2.6-jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jdk8-alpine/Dockerfile)
--	[`2.6.0-alpha-2-jre8-alpine`, `2.6-jre8-alpine`, `2.6.0-alpha-2-jre-alpine`, `2.6-jre-alpine`, `2.6.0-alpha-2-alpine`, `2.6-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jre8-alpine/Dockerfile)
--	[`2.6.0-alpha-2-jdk9`, `2.6-jdk9` (*jdk9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jdk9/Dockerfile)
--	[`2.6.0-alpha-2-jre9`, `2.6-jre9` (*jre9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/1af782d50826f6856f5578331279ad9cbad91168/jre9/Dockerfile)
--	[`3.0.0-alpha-1-jdk8`, `3.0-jdk8`, `3.0.0-alpha-1-jdk`, `3.0-jdk` (*jdk8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jdk8/Dockerfile)
--	[`3.0.0-alpha-1-jre8`, `3.0-jre8`, `3.0.0-alpha-1-jre`, `3.0-jre`, `3.0.0-alpha-1`, `3.0` (*jre8/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jre8/Dockerfile)
--	[`3.0.0-alpha-1-jdk8-alpine`, `3.0-jdk8-alpine`, `3.0.0-alpha-1-jdk-alpine`, `3.0-jdk-alpine` (*jdk8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jdk8-alpine/Dockerfile)
--	[`3.0.0-alpha-1-jre8-alpine`, `3.0-jre8-alpine`, `3.0.0-alpha-1-jre-alpine`, `3.0-jre-alpine`, `3.0.0-alpha-1-alpine`, `3.0-alpine` (*jre8-alpine/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jre8-alpine/Dockerfile)
--	[`3.0.0-alpha-1-jdk9`, `3.0-jdk9` (*jdk9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jdk9/Dockerfile)
--	[`3.0.0-alpha-1-jre9`, `3.0-jre9` (*jre9/Dockerfile*)](https://github.com/groovy/docker-groovy/blob/946d295e39ffce9da17f87184b8c552793a80115/jre9/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `groovy` does not support the currently selected architecture (`arm32v7`).
 
 # Quick reference
 
@@ -97,7 +64,7 @@ Note that if you are mounting a volume and the uid running Docker is not `1000`,
 
 ## Running a Groovy script
 
-`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts groovy groovy <script> <script-args>`
+`docker run --rm -v "$PWD":/home/groovy/scripts -w /home/groovy/scripts arm32v7/groovy groovy <script> <script-args>`
 
 ## Reusing the Grapes cache
 
@@ -105,26 +72,10 @@ The local Grapes cache can be reused across containers by creating a volume and 
 
 ```console
 docker volume create --name grapes-cache
-docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes groovy
+docker run --rm -it -v grapes-cache:/home/groovy/.groovy/grapes arm32v7/groovy
 ```
 
 **Note: Java 9 support is experimental**
-
-# Image Variants
-
-The `groovy` images come in many flavors, each designed for a specific use case.
-
-## `groovy:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `groovy:alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

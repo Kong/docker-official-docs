@@ -16,10 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `enterprise`, `5.0.1`, `enterprise-5.0.1` (*enterprise/couchbase-server/5.0.1/Dockerfile*)](https://github.com/couchbase/docker/blob/1dc19b7a42c42edb9f777e33d3a385bb8ec612fc/enterprise/couchbase-server/5.0.1/Dockerfile)
--	[`4.6.4`, `enterprise-4.6.4` (*enterprise/couchbase-server/4.6.4/Dockerfile*)](https://github.com/couchbase/docker/blob/1dc19b7a42c42edb9f777e33d3a385bb8ec612fc/enterprise/couchbase-server/4.6.4/Dockerfile)
--	[`community`, `community-5.0.1` (*community/couchbase-server/5.0.1/Dockerfile*)](https://github.com/couchbase/docker/blob/1dc19b7a42c42edb9f777e33d3a385bb8ec612fc/community/couchbase-server/5.0.1/Dockerfile)
--	[`community-4.5.1` (*community/couchbase-server/4.5.1/Dockerfile*)](https://github.com/couchbase/docker/blob/1dc19b7a42c42edb9f777e33d3a385bb8ec612fc/community/couchbase-server/4.5.1/Dockerfile)
+**No supported tags found!**
+
+It is very likely that `couchbase` does not support the currently selected architecture (`arm32v7`).
 
 # Quick reference
 

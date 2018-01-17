@@ -16,9 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`42.2` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/bc0b54b2fb7348797feed1e462fabb4ccfb91e2e/x86_64//Dockerfile)
--	[`42.3`, `latest`, `leap` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/1bab895f6d556a12f450590eed385bac17965599/x86_64//Dockerfile)
--	[`tumbleweed` (*x86_64//Dockerfile*)](https://github.com/openSUSE/docker-containers-build/blob/9f38c533d3dc71f57106364d5e4055fdbf268649/x86_64//Dockerfile)
+**No supported tags found!**
+
+It is very likely that `opensuse` does not support the currently selected architecture (`arm32v7`).
 
 # Quick reference
 
