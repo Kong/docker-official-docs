@@ -26,6 +26,8 @@ WARNING:
 -	[`17.09.1-ce-dind`, `17.09.1-dind`, `17.09-dind` (*17.09/dind/Dockerfile*)](https://github.com/docker-library/docker/blob/00de5231b507c989ce900df2ef3f1abf4ce7e19c/17.09/dind/Dockerfile)
 -	[`17.09.1-ce-git`, `17.09.1-git`, `17.09-git` (*17.09/git/Dockerfile*)](https://github.com/docker-library/docker/blob/a6b52c73daa8283cd861f41f55e53426008708ac/17.09/git/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/docker/badge/icon) (`arm64v8/docker` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/docker/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -77,7 +79,7 @@ If you are still convinced that you need Docker-in-Docker and not just access to
 **IMPORTANT:** this image defaults to `--storage-driver=vfs`, which will be very slow and inefficient (but is the only driver which is guaranteed to work regardless of your underlying filesystem). Which driver you should use varies depending on your needs, but a good rule of thumb is that your DinD instance should be using the same driver as your host (which can be seen under `Storage Driver` in the output of `docker info`). See the "Custom daemon flags" section below for how to specify your storage driver.
 
 ```console
-$ docker run --privileged --name some-docker -d docker:stable-dind
+$ docker run --privileged --name some-docker -d arm64v8/docker:stable-dind
 ```
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
@@ -87,7 +89,7 @@ This image includes `EXPOSE 2375` (the Docker port), so standard container linki
 ## Connect to it from a second container
 
 ```console
-$ docker run --rm --link some-docker:docker docker:edge version
+$ docker run --rm --link some-docker:docker arm64v8/docker:edge version
 Client:
  Version:      17.05.0-ce
  API version:  1.27 (downgraded from 1.29)
@@ -107,7 +109,7 @@ Server:
 ```
 
 ```console
-$ docker run -it --rm --link some-docker:docker docker:edge sh
+$ docker run -it --rm --link some-docker:docker arm64v8/docker:edge sh
 / # docker version
 Client:
  Version:      17.05.0-ce
@@ -128,7 +130,7 @@ Server:
 ```
 
 ```console
-$ docker run --rm --link some-docker:docker docker info
+$ docker run --rm --link some-docker:docker arm64v8/docker info
 Containers: 0
  Running: 0
  Paused: 0
@@ -172,7 +174,7 @@ Live Restore Enabled: false
 ```
 
 ```console
-$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker version
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock arm64v8/docker version
 Client:
  Version:      17.05.0-ce
  API version:  1.28 (downgraded from 1.29)
@@ -194,7 +196,7 @@ Server:
 ## Custom daemon flags
 
 ```console
-$ docker run --privileged --name some-overlay-docker -d docker:dind --storage-driver=overlay
+$ docker run --privileged --name some-overlay-docker -d arm64v8/docker:dind --storage-driver=overlay
 ```
 
 ## Where to Store Data
@@ -210,7 +212,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `docker` container like this:
 
 	```console
-	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d docker:dind
+	$ docker run --privileged --name some-docker -v /my/own/var-lib-docker:/var/lib/docker -d arm64v8/docker:dind
 	```
 
 The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `/my/own/var-lib-docker` directory from the underlying host system as `/var/lib/docker` inside the container, where Docker by default will write its data files.
