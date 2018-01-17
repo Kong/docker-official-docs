@@ -19,6 +19,8 @@ WARNING:
 -	[`7.5.4` (*7.5/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/8d93ed625153a8446b7be1b6bd18f137af63815f/7.5/Dockerfile)
 -	[`7.6.1`, `latest` (*7.6/Dockerfile*)](https://github.com/Bonitasoft-Community/docker_bonita/blob/9f7a0fa1f51ecbbe6dbae3fe16278144038a1397/7.6/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/bonita/badge/icon) (`amd64/bonita` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/bonita/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -60,7 +62,7 @@ Bonita (called Bonita BPM till 7.5) is an open-source business process managemen
 ## Quick start
 
 ```console
-$ docker run --name bonita -d -p 8080:8080 bonita
+$ docker run --name bonita -d -p 8080:8080 amd64/bonita
 ```
 
 This will start a container running the [Tomcat Bundle](https://documentation.bonitasoft.com/bonita/7.6/tomcat-bundle) with Bonita Engine + Bonita Portal. With no environment variables specified, it's as like if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
@@ -89,7 +91,7 @@ $ docker run --name mydbpostgres -v "$PWD"/custom_postgres/:/docker-entrypoint-i
 See the [official PostgreSQL documentation](https://registry.hub.docker.com/_/postgres/) for more details.
 
 ```console
-$ docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080 bonita
+$ docker run --name bonita_postgres --link mydbpostgres:postgres -d -p 8080:8080 amd64/bonita
 ```
 
 ### MySQL
@@ -113,13 +115,13 @@ See the [official MySQL documentation](https://registry.hub.docker.com/_/mysql/)
 Start your application container to link it to the MySQL container:
 
 ```console
-$ docker run --name bonita_mysql --link mydbmysql:mysql -d -p 8080:8080 bonita
+$ docker run --name bonita_mysql --link mydbmysql:mysql -d -p 8080:8080 amd64/bonita
 ```
 
 ## Modify default credentials
 
 ```console
-$ docker run --name=bonita -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 bonita
+$ docker run --name=bonita -e "TENANT_LOGIN=tech_user" -e "TENANT_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 amd64/bonita
 ```
 
 Now you can access the Bonita Portal on localhost:8080/bonita and login using: tech_user / secret
@@ -193,7 +195,7 @@ The Docker documentation is a good starting point for understanding the differen
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
 2.	Start your `bonita` container like this:
 
-	docker run --name some-bonita -v /my/own/datadir:/opt/bonita -d bonita:tag
+	docker run --name some-bonita -v /my/own/datadir:/opt/bonita -d amd64/bonita:tag
 
 The `-v /my/own/datadir:/opt/bonita` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/opt/bonita` inside the container, where Bonita will deploy the bundle and write data files by default.
 
@@ -312,13 +314,13 @@ $ chcon -Rt svirt_sandbox_file_t /my/own/datadir
 	-	If < 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.2.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v "$PWD"/bonita_migration:/opt/bonita/ -d -p 8081:8080 bonita:7.2.4
+	$ docker run --name=bonita_7.2.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -v "$PWD"/bonita_migration:/opt/bonita/ -d -p 8081:8080 amd64/bonita:7.2.4
 	```
 
 	-	If >= 7.3.0
 
 	```console
-	$ docker run --name=bonita_7.5.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:7.5.4
+	$ docker run --name=bonita_7.5.4_postgres --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 amd64/bonita:7.5.4
 	```
 
 -	Reapply specific configuration if needed, for example with a version >= 7.3.0 :
@@ -368,7 +370,7 @@ This Docker image activates both static and dynamic authorization checks by defa
 For specific needs you can override this behavior by setting HTTP_API to true and REST_API_DYN_AUTH_CHECKS to false:
 
 ```console
-$ docker run  -e HTTP_API=true -e REST_API_DYN_AUTH_CHECKS=false --name bonita -d -p 8080:8080 bonita
+$ docker run  -e HTTP_API=true -e REST_API_DYN_AUTH_CHECKS=false --name bonita -d -p 8080:8080 amd64/bonita
 ```
 
 ## Environment variables
@@ -462,7 +464,7 @@ For example, you can increase the log level :
 	echo 'sed -i "s/^org.bonitasoft.level = WARNING$/org.bonitasoft.level = FINEST/" /opt/bonita/BonitaCommunity-7.6.1-Tomcat-8.5.23/server/conf/logging.properties' >> custom_bonita/bonita.sh
 	chmod +x custom_bonita/bonita.sh
 	
-	docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 bonita
+	docker run --name bonita_custom -v "$PWD"/custom_bonita/:/opt/custom-init.d -d -p 8080:8080 amd64/bonita
 
 Note: There are several ways to check the `bonita` logs. One of them is
 

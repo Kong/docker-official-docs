@@ -19,6 +19,8 @@ WARNING:
 -	[`0.9`, `0.9.3` (*0.9/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/d322572f7dd6ea468a14a4d832fbec26f152c71e/0.9/Dockerfile)
 -	[`0.10`, `0.10.0`, `latest` (*0.10/Dockerfile*)](https://github.com/ahawkins/docker-thrift/blob/e1f81dfe3e8fac5588e12d2b880166d1743dbecd/0.10/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/thrift/badge/icon) (`amd64/thrift` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/thrift/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -58,7 +60,7 @@ Read more about [Thrift](https://thrift.apache.org).
 This is image is intended to run as an executable. Files are provided by mounting a directory. Here's an example of compiling `service.thrift` to ruby to the current directory.
 
 ```console
-$ docker run -v "$PWD:/data" thrift thrift -o /data --gen rb /data/service.thrift
+$ docker run -v "$PWD:/data" amd64/thrift thrift -o /data --gen rb /data/service.thrift
 ```
 
 Note, that you may want to include `-u $(id -u)` to set the UID on generated files. The thrift process runs as root by default which will generate root owned files depending on your docker setup.

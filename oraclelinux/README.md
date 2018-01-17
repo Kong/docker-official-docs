@@ -28,6 +28,8 @@ WARNING:
 -	[`6.7` (*6.7/Dockerfile*)](https://github.com/oracle/ol-container-images/blob/d9ef39427435f87702beae3067c3d114c7581751/6.7/Dockerfile)
 -	[`6.6` (*6.6/Dockerfile*)](https://github.com/oracle/ol-container-images/blob/d9ef39427435f87702beae3067c3d114c7581751/6.6/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/oraclelinux/badge/icon) (`amd64/oraclelinux` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/oraclelinux/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -64,7 +66,7 @@ Oracle Linux is an open-source operating system available under the GNU General 
 
 ## How to use these images
 
-The Oracle Linux images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use Oracle Linux 6 as the base of an image, specify `FROM oraclelinux:6`.
+The Oracle Linux images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use Oracle Linux 6 as the base of an image, specify `FROM amd64/oraclelinux:6`.
 
 ## Official Resources
 

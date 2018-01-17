@@ -27,6 +27,8 @@ WARNING:
 -	[`4.4.1-jdk9`, `4.4-jdk9`, `jdk9` (*jdk9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jdk9/Dockerfile)
 -	[`4.4.1-jre9`, `4.4-jre9`, `jre9` (*jre9/Dockerfile*)](https://github.com/keeganwitt/docker-gradle/blob/b0419babd3271f6c8e554fbc8bbd8dc909936763/jre9/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/gradle/badge/icon) (`amd64/gradle` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/gradle/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -69,19 +71,19 @@ Note that if you are mounting a volume and the uid running Docker is not `1000`,
 
 Run this from the directory of the Gradle project you want to build.
 
-`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task>`
+`docker run --rm -v "$PWD":/home/gradle/project -w /home/gradle/project amd64/gradle gradle <gradle-task>`
 
 **Note: Java 9 support is experimental**
 
 # Image Variants
 
-The `gradle` images come in many flavors, each designed for a specific use case.
+The `amd64/gradle` images come in many flavors, each designed for a specific use case.
 
-## `gradle:<version>`
+## `amd64/gradle:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `gradle:alpine`
+## `amd64/gradle:alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

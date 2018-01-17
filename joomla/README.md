@@ -21,6 +21,8 @@ WARNING:
 -	[`3.8.2-fpm`, `3.8-fpm`, `3-fpm`, `fpm` (*fpm/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/9cc09b86340bd4eabce331807e6f9ec5adbfcd1a/fpm/Dockerfile)
 -	[`3.8.2-fpm-php7`, `3.8-fpm-php7`, `3-fpm-php7`, `fpm-php7` (*fpm-php7/Dockerfile*)](https://github.com/joomla/docker-joomla/blob/9cc09b86340bd4eabce331807e6f9ec5adbfcd1a/fpm-php7/Dockerfile)
 
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/joomla/badge/icon) (`amd64/joomla` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/joomla/)
+
 # Quick reference
 
 -	**Where to get help**:  
@@ -60,7 +62,7 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 # How to use this image
 
 ```console
-$ docker run --name some-joomla --link some-mysql:mysql -d joomla
+$ docker run --name some-joomla --link some-mysql:mysql -d amd64/joomla
 ```
 
 The following environment variables are also honored for configuring your Joomla instance:
@@ -75,7 +77,7 @@ If the `JOOMLA_DB_NAME` specified does not already exist on the given MySQL serv
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-joomla --link some-mysql:mysql -p 8080:80 -d joomla
+$ docker run --name some-joomla --link some-mysql:mysql -p 8080:80 -d amd64/joomla
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
