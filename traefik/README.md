@@ -16,10 +16,12 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.5.0-rc5`, `1.5.0-rc5`, `v1.5`, `1.5`, `cancoillotte` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/ff5cbe3809d54e1594586975184781d1a44662a9/scratch/amd64/Dockerfile)
+-	[`v1.5.0-rc5`, `1.5.0-rc5`, `v1.5`, `1.5`, `cancoillotte` (*scratch/arm/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/ff5cbe3809d54e1594586975184781d1a44662a9/scratch/arm/Dockerfile)
 -	[`v1.5.0-rc5-alpine`, `1.5.0-rc5-alpine`, `v1.5-alpine`, `1.5-alpine`, `cancoillotte-alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/ff5cbe3809d54e1594586975184781d1a44662a9/alpine/Dockerfile)
--	[`v1.4.6`, `1.4.6`, `v1.4`, `1.4`, `roquefort`, `latest` (*scratch/amd64/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/11fb07f3be330bece4875ced219372c6bda16868/scratch/amd64/Dockerfile)
+-	[`v1.4.6`, `1.4.6`, `v1.4`, `1.4`, `roquefort`, `latest` (*scratch/arm/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/11fb07f3be330bece4875ced219372c6bda16868/scratch/arm/Dockerfile)
 -	[`v1.4.6-alpine`, `1.4.6-alpine`, `v1.4-alpine`, `1.4-alpine`, `roquefort-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/containous/traefik-library-image/blob/11fb07f3be330bece4875ced219372c6bda16868/alpine/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/traefik/badge/icon) (`arm32v6/traefik` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/traefik/)
 
 # Quick reference
 
