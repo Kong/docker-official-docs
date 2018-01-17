@@ -17,29 +17,23 @@ WARNING:
 # Supported tags and respective `Dockerfile` links
 
 -	[`7.2.0`, `7.2`, `7`, `latest` (*7.2/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/41f27ad4aa36e0f1d8485432e1a40cded663f17b/7.2/Dockerfile)
--	[`7.2.0-alpine`, `7.2-alpine`, `7-alpine`, `alpine` (*7.2/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/41f27ad4aa36e0f1d8485432e1a40cded663f17b/7.2/alpine/Dockerfile)
 -	[`7.2.0-slim`, `7.2-slim`, `7-slim`, `slim` (*7.2/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/41f27ad4aa36e0f1d8485432e1a40cded663f17b/7.2/slim/Dockerfile)
 -	[`7.1.0`, `7.1` (*7.1/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/7.1/Dockerfile)
--	[`7.1.0-alpine`, `7.1-alpine` (*7.1/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/7.1/alpine/Dockerfile)
 -	[`7.1.0-slim`, `7.1-slim` (*7.1/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/7.1/slim/Dockerfile)
 -	[`7.0.1`, `7.0` (*7.0/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/7.0/Dockerfile)
--	[`7.0.1-alpine`, `7.0-alpine` (*7.0/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/7.0/alpine/Dockerfile)
 -	[`7.0.1-slim`, `7.0-slim` (*7.0/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/7.0/slim/Dockerfile)
 -	[`6.6.2`, `6.6`, `6` (*6.6/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.6/Dockerfile)
--	[`6.6.2-alpine`, `6.6-alpine`, `6-alpine` (*6.6/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.6/alpine/Dockerfile)
 -	[`6.6.2-slim`, `6.6-slim`, `6-slim` (*6.6/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.6/slim/Dockerfile)
 -	[`6.5.1`, `6.5` (*6.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.5/Dockerfile)
--	[`6.5.1-alpine`, `6.5-alpine` (*6.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.5/alpine/Dockerfile)
 -	[`6.5.1-slim`, `6.5-slim` (*6.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.5/slim/Dockerfile)
 -	[`6.4.2`, `6.4` (*6.4/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.4/Dockerfile)
--	[`6.4.2-alpine`, `6.4-alpine` (*6.4/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.4/alpine/Dockerfile)
 -	[`6.4.2-slim`, `6.4-slim` (*6.4/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.4/slim/Dockerfile)
 -	[`6.3.0`, `6.3` (*6.3/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.3/Dockerfile)
--	[`6.3.0-alpine`, `6.3-alpine` (*6.3/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.3/alpine/Dockerfile)
 -	[`6.3.0-slim`, `6.3-slim` (*6.3/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/6.3/slim/Dockerfile)
 -	[`5.5.5`, `5.5`, `5` (*5.5/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/5.5/Dockerfile)
--	[`5.5.5-alpine`, `5.5-alpine`, `5-alpine` (*5.5/alpine/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/5.5/alpine/Dockerfile)
 -	[`5.5.5-slim`, `5.5-slim`, `5-slim` (*5.5/slim/Dockerfile*)](https://github.com/docker-solr/docker-solr/blob/46459f813c8bacc84449de5e7c4c5d1ade791a46/5.5/slim/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/solr/badge/icon) (`arm32v5/solr` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/solr/)
 
 # Quick reference
 
@@ -86,7 +80,7 @@ Learn more on [Apache Solr homepage](http://lucene.apache.org/solr/) and in the 
 To run a single Solr server:
 
 ```console
-$ docker run --name my_solr -d -p 8983:8983 -t solr
+$ docker run --name my_solr -d -p 8983:8983 -t arm32v5/solr
 ```
 
 Then with a web browser go to `http://localhost:8983/` to see the Admin Console (adjust the hostname for your docker host).
@@ -112,7 +106,7 @@ In the UI, find the "Core selector" popup menu and select the "gettingstarted" c
 For convenience, there is a single command that starts Solr, creates a collection called "demo", and loads sample data into it:
 
 ```console
-$ docker run --name solr_demo -d -P solr solr-demo
+$ docker run --name solr_demo -d -P arm32v5/solr solr-demo
 ```
 
 ## Loading your own data
@@ -127,7 +121,7 @@ $ docker exec -it --user=solr my_solr bin/post -c gettingstarted mydata.xml
 or by using Docker host volumes:
 
 ```console
-$ docker run --name my_solr -d -p 8983:8983 -t -v $HOME/mydata:/opt/solr/mydata solr
+$ docker run --name my_solr -d -p 8983:8983 -t -v $HOME/mydata:/opt/solr/mydata arm32v5/solr
 $ docker exec -it --user=solr my_solr bin/solr create_core -c gettingstarted
 $ docker exec -it --user=solr my_solr bin/post -c gettingstarted mydata/mydata.xml
 ```
@@ -141,7 +135,7 @@ In addition to the `docker exec` method explained above, you can create a core a
 If you run:
 
 ```console
-$ docker run -d -P solr solr-create -c mycore
+$ docker run -d -P arm32v5/solr solr-create -c mycore
 ```
 
 the container will:
@@ -155,7 +149,7 @@ the container will:
 You can combine this with mounted volumes to pass in core configuration from your host:
 
 ```console
-$ docker run -d -P -v $PWD/myconfig:/myconfig solr solr-create -c mycore -d /myconfig
+$ docker run -d -P -v $PWD/myconfig:/myconfig arm32v5/solr solr-create -c mycore -d /myconfig
 ```
 
 When using the `solr-create` command, Solr will log to the standard docker log (inspect with `docker logs`), and the collection creation will happen in the background and log to `/opt/docker-solr/init.log`.
@@ -165,8 +159,8 @@ This first way closely mirrors the manual core creation steps and uses Solr's ow
 The second way of creating a core at start time is using the `solr-precreate` command. This will create the core in the filesystem before running Solr. You should pass it the core name, and optionally the directory to copy the config from (this defaults to Solr's built-in "basic_configs"). For example:
 
 ```console
-$ docker run -d -P solr solr-precreate mycore
-$ docker run -d -P -v $PWD/myconfig:/myconfig solr solr-precreate mycore /myconfig
+$ docker run -d -P arm32v5/solr solr-precreate mycore
+$ docker run -d -P -v $PWD/myconfig:/myconfig arm32v5/solr solr-precreate mycore /myconfig
 ```
 
 This method stores the core in an intermediate subdirectory called "mycores". This allows you to use mounted volumes:
@@ -174,7 +168,7 @@ This method stores the core in an intermediate subdirectory called "mycores". Th
 ```console
 $ mkdir mycores
 $ sudo chown 8983:8983 mycores
-$ docker run -d -P -v $PWD/mycores:/opt/solr/server/solr/mycores solr solr-precreate mycore
+$ docker run -d -P -v $PWD/mycores:/opt/solr/server/solr/mycores arm32v5/solr solr-precreate mycore
 ```
 
 This second way is quicker, easier to monitor because it logs to the docker log, and can fail immediately if something is wrong. But, because it makes assumptions about Solr's "basic_configs", future upstream changes could break that.
@@ -189,7 +183,7 @@ With Docker Compose you can create a Solr container with the index stored in a n
 version: '2'
 services:
   solr:
-    image: solr
+    image: arm32v5/solr
     ports:
      - "8983:8983"
     volumes:
@@ -221,7 +215,7 @@ grep '^SOLR_HEAP=' /opt/solr/bin/solr.in.sh
 you can run:
 
 ```console
-$ docker run --name solr_heap1 -d -P -v $PWD/docs/set-heap.sh:/docker-entrypoint-initdb.d/set-heap.sh solr
+$ docker run --name solr_heap1 -d -P -v $PWD/docs/set-heap.sh:/docker-entrypoint-initdb.d/set-heap.sh arm32v5/solr
 $ sleep 5
 $ docker logs solr_heap1 | head
 /opt/docker-solr/scripts/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/set-heap.sh
@@ -249,23 +243,15 @@ This repository is based on (and replaces) `makuk66/docker-solr`, and has been s
 
 # Image Variants
 
-The `solr` images come in many flavors, each designed for a specific use case.
+The `arm32v5/solr` images come in many flavors, each designed for a specific use case.
 
-## `solr:<version>`
+## `arm32v5/solr:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `solr:alpine`
+## `arm32v5/solr:slim`
 
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `solr:slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `solr`. Unless you are working in an environment where *only* the `solr` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `arm32v5/solr`. Unless you are working in an environment where *only* the `arm32v5/solr` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
