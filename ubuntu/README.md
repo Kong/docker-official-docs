@@ -16,10 +16,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.10`, `artful-20180112`, `artful`, `rolling` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/29b1e6e699a0ab37d459137c15039ccd606bf4f8/artful/Dockerfile)
--	[`18.04`, `bionic-20171220`, `bionic`, `devel` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/29b1e6e699a0ab37d459137c15039ccd606bf4f8/bionic/Dockerfile)
--	[`14.04`, `trusty-20180112`, `trusty` (*trusty/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/29b1e6e699a0ab37d459137c15039ccd606bf4f8/trusty/Dockerfile)
--	[`16.04`, `xenial-20180112.1`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/29b1e6e699a0ab37d459137c15039ccd606bf4f8/xenial/Dockerfile)
+-	[`17.10`, `artful-20180112`, `artful`, `rolling` (*artful/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/d4308c7f25e7ddb34128c1f8b77784ef322a690e/artful/Dockerfile)
+-	[`18.04`, `bionic-20171220`, `bionic`, `devel` (*bionic/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/d4308c7f25e7ddb34128c1f8b77784ef322a690e/bionic/Dockerfile)
+-	[`16.04`, `xenial-20180112.1`, `xenial`, `latest` (*xenial/Dockerfile*)](https://github.com/tianon/docker-brew-ubuntu-core/blob/d4308c7f25e7ddb34128c1f8b77784ef322a690e/xenial/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/ubuntu/badge/icon) (`s390x/ubuntu` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/ubuntu/)
 
 # Quick reference
 
@@ -63,9 +64,9 @@ Development of Ubuntu is led by UK-based Canonical Ltd., a company owned by Sout
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `s390x/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `s390x/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `s390x/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
@@ -81,10 +82,10 @@ ENV LANG en_US.utf8
 
 ## `/etc/apt/sources.list`
 
-### `ubuntu:16.04`
+### `s390x/ubuntu:16.04`
 
 ```console
-$ docker run ubuntu:16.04 grep -v '^#' /etc/apt/sources.list
+$ docker run s390x/ubuntu:16.04 grep -v '^#' /etc/apt/sources.list
 
 deb http://archive.ubuntu.com/ubuntu/ xenial main restricted
 deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted
@@ -104,10 +105,10 @@ deb http://archive.ubuntu.com/ubuntu/ xenial-security universe
 deb-src http://archive.ubuntu.com/ubuntu/ xenial-security universe
 ```
 
-### `ubuntu:14.04`
+### `s390x/ubuntu:14.04`
 
 ```console
-$ docker run ubuntu:14.04 grep -v '^#' /etc/apt/sources.list
+$ docker run s390x/ubuntu:14.04 grep -v '^#' /etc/apt/sources.list
 
 deb http://archive.ubuntu.com/ubuntu/ trusty main restricted
 deb-src http://archive.ubuntu.com/ubuntu/ trusty main restricted

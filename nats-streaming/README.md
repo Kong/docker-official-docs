@@ -18,15 +18,13 @@ WARNING:
 
 ## Simple Tags
 
--	[`0.7.0-linux`, `linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/212a8f50575d4178722b869025ac7164d2da976f/amd64/Dockerfile)
--	[`0.7.0-nanoserver`, `nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/212a8f50575d4178722b869025ac7164d2da976f/windows/nanoserver/Dockerfile)
--	[`0.7.0-windowsservercore`, `windowsservercore` (*windows/windowsservercore/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/212a8f50575d4178722b869025ac7164d2da976f/windows/windowsservercore/Dockerfile)
+
 
 ## Shared Tags
 
 -	`0.7.0`, `latest`:
-	-	[`0.7.0-linux` (*amd64/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/212a8f50575d4178722b869025ac7164d2da976f/amd64/Dockerfile)
-	-	[`0.7.0-nanoserver` (*windows/nanoserver/Dockerfile*)](https://github.com/nats-io/nats-streaming-docker/blob/212a8f50575d4178722b869025ac7164d2da976f/windows/nanoserver/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/nats-streaming/badge/icon) (`s390x/nats-streaming` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/nats-streaming/)
 
 # Quick reference
 
@@ -79,7 +77,7 @@ $ docker run nats-streaming-server nats-streaming-server -p 4223 -m 8223
 # 8222 is an HTTP management port for information reporting.
 # use -p or -P as needed.
 
-$ docker run -d nats-streaming
+$ docker run -d s390x/nats-streaming
 ```
 
 Output that you would get if you had started with `-ti` instead of `d` (for daemon):
@@ -108,7 +106,7 @@ Output that you would get if you had started with `-ti` instead of `d` (for daem
 To use a file based store instead, you would run:
 
 ```bash
-$ docker run -d nats-streaming -store file -dir datastore
+$ docker run -d s390x/nats-streaming -store file -dir datastore
 
 [1] 2017/12/19 01:10:47.834350 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.7.0
 [1] 2017/12/19 01:10:47.834426 [INF] STREAM: ServerID: JtwCbjdtYKKtEPXjs5elZv
@@ -138,7 +136,7 @@ $ docker run -d --name=nats-main nats
 Now, start the Streaming server and link it to the above docker image:
 
 ```bash
-$ docker run -d --link nats-main nats-streaming -store file -dir datastore -ns nats://nats-main:4222
+$ docker run -d --link nats-main s390x/nats-streaming -store file -dir datastore -ns nats://nats-main:4222
 
 [1] 2017/12/19 01:11:15.563753 [INF] STREAM: Starting nats-streaming-server[test-cluster] version 0.7.0
 [1] 2017/12/19 01:11:15.563797 [INF] STREAM: ServerID: cY5Om0xLN4uk8jMACdvNkt
@@ -255,23 +253,6 @@ Common Options:
 # Configuration
 
 Details on how to configure further the NATS Streaming server can be found [here](https://github.com/nats-io/nats-streaming-server#configuring)
-
-# Image Variants
-
-The `nats-streaming` images come in many flavors, each designed for a specific use case.
-
-## `nats-streaming:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `nats-streaming:windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

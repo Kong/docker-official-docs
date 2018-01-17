@@ -18,19 +18,15 @@ WARNING:
 
 ## Simple Tags
 
--	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/Dockerfile)
--	[`nanoserver-sac2016` (*amd64/hello-world/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hello-world/nanoserver-sac2016/Dockerfile)
--	[`nanoserver-1709` (*amd64/hello-world/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hello-world/nanoserver-1709/Dockerfile)
+-	[`linux` (*s390x/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/s390x/hello-world/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
-	-	[`linux` (*amd64/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/amd64/hello-world/Dockerfile)
-	-	[`nanoserver-sac2016` (*amd64/hello-world/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hello-world/nanoserver-sac2016/Dockerfile)
-	-	[`nanoserver-1709` (*amd64/hello-world/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hello-world/nanoserver-1709/Dockerfile)
+	-	[`linux` (*s390x/hello-world/Dockerfile*)](https://github.com/docker-library/hello-world/blob/c83a065a24e94e635ddd518c2a3cffc91accf30d/s390x/hello-world/Dockerfile)
 -	`nanoserver`:
-	-	[`nanoserver-sac2016` (*amd64/hello-world/nanoserver-sac2016/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hello-world/nanoserver-sac2016/Dockerfile)
-	-	[`nanoserver-1709` (*amd64/hello-world/nanoserver-1709/Dockerfile*)](https://github.com/docker-library/hello-world/blob/d206a435163e171e629490b2803b2615b3831906/amd64/hello-world/nanoserver-1709/Dockerfile)
+
+[![Build Status](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/hello-world/badge/icon) (`s390x/hello-world` build job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/hello-world/)
 
 # Quick reference
 
@@ -63,7 +59,7 @@ WARNING:
 # Example output
 
 ```console
-$ docker run hello-world
+$ docker run s390x/hello-world
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -86,7 +82,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 
 
-$ docker images hello-world
+$ docker images s390x/hello-world
 REPOSITORY   TAG     IMAGE ID      SIZE
 hello-world  latest  05a3bd381fc2  1.84kB
 ```
