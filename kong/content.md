@@ -1,6 +1,6 @@
 # What is Kong?
 
-Kong is a scalable, open source API Platform (also known as an API Gateway, or API Middleware, or Service Mesh for Microservices). Kong was originally built by [Kong Inc.](https://konghq.com) (formerly known as Mashape) to secure, manage and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
+Kong is a scalable, open source API Platform (also known as an API Gateway or API Middleware). Kong was originally built by [Kong Inc.](https://konghq.com) (formerly known as Mashape) to secure, manage and extend over 15,000 Microservices for its API Marketplace, which generates billions of requests per month.
 
 Under active development, Kong is now used in production at hundreds of organizations from startups, to large enterprises and governments including: The New York Times, Expedia, Healthcare.gov, The Guardian, Condè Nast, The University of Auckland, Ferrari, Rakuten, Cisco, SkyScanner, Yahoo! Japan, Giphy and so on.
 
@@ -111,10 +111,3 @@ This will run the [`kong reload`](https://docs.konghq.com/latest/cli/#reload) co
 # Kubernetes Ingress
 
 Among the many deployment options [available](https://konghq.com/install), Kong also offers a [Kubernetes Ingress Controller](https://github.com/Kong/kubernetes-ingress-controller) ready to use in your K8S environment.
-
-# Service Mesh
-
-Since version 1.x you can run Kong in a Service Mesh deployment as a platform-agnostic sidecar proxy (including Kubernetes, but also on any other platform supported by Kong). To get started and learn more you can read the docs at:
-
--	[Streams and Service Mesh](https://docs.konghq.com/latest/streams-and-service-mesh/)
--	[Kubernetes and Service Mesh](https://github.com/Kong/kong-mesh-dist-kubernetes)
